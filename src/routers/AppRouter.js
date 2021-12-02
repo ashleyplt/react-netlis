@@ -2,7 +2,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Navbar } from "../components/ui/navBar"; 
 import { Sidebar } from "../components/ui/sideBar";
 import { Principal } from "../components/principalpage/Principal";
-import { resultados } from "../components/resultados/resultados";
+import {Resultados} from "../components/resultados/Resultados";
 
 export const AppRouter = () => {
     return (
@@ -14,8 +14,9 @@ export const AppRouter = () => {
             
             <BrowserRouter>
                 <Routes>
-                   <Route path="/" element = {<Principal/>} />
-                   <Route path="/resultados" element = {<resultados/>} />
+                   <Route path="/" element = {<Principal/>} /> 
+                   <Route path="/Resultados" element = {<Resultados/>} /> 
+                   
                 </Routes>      
             </BrowserRouter>
     
