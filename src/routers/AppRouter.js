@@ -2,7 +2,8 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Navbar } from "../components/ui/navBar"; 
 import { Sidebar } from "../components/ui/sideBar";
 import { Principal } from "../components/principalpage/Principal";
-import {Resultados} from "../components/resultados/Resultados";
+import OrdenTabla from "../components/ordenes/ordenesTable";
+import Examen from "../components/examenes/Examen";
 
 export const AppRouter = () => {
     return (
@@ -15,7 +16,9 @@ export const AppRouter = () => {
             <BrowserRouter>
                 <Routes>
                    <Route path="/" element = {<Principal/>} /> 
-                   <Route path="/Resultados" element = {<Resultados/>} /> 
+                   <Route path="/resultados" element = {<resultadosData/>} /> 
+                   <Route path="/ordenes" element={<OrdenTabla/>}/>
+                   <Route path="/examen" element={<Examen/>}/>
                    
                 </Routes>      
             </BrowserRouter>
